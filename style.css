@@ -403,7 +403,11 @@ input::placeholder {
     height: 30px;
 }
 
-
+.main-navbar{
+    position: absolute;
+    right: 50vw;
+    transform: translateX(57%);
+}
 
 
 @media (max-width:768px) {
