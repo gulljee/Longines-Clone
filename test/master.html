@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Master Collection</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+
+
+
+        .mega-menu-master {
+            padding: 60px 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            gap: 0vw;
+        }
+
+
+
+
+        .mega-menu-master figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            position: relative;
+            top: 10vh;
+            max-width: 15vw;
+        }
+
+
+
+        .image-box {
+            max-width: 15vw;
+
+            background-color: white;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+        }
+
+
+        .image-box img {
+            max-width: 80%;
+            max-height: 80%;
+            transition: transform 0.3s ease;
+        }
+
+        figcaption {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: black;
+            transition: color 0.3s ease;
+        }
+
+        figure:hover img {
+            transform: scale(1.05);
+        }
+
+        figure:hover figcaption {
+            color: #009dff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+
+        .close-button {
+            height: 8vh;
+            width: 4vw;
+            font-size: 1.4em;
+            border-radius: 50%;
+            /* color: black; */
+            background-color: #f5f5f5;
+            position: absolute;
+            right: 3vw;
+            top: 6vh;
+            cursor: pointer;
+            border: 1px solid #d3d3d3;
+            transition: border-color 0.3s ease;
+            z-index: 9999;
+        }
+        
+        .close-button:hover {
+            border-color: #333;
+            transition: border-color 0.3s ease;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <button class="close-button">&times;</button>
+    <div class="mega-menu-master">
+
+        <figure>
+            <a href="#">
+                <div class="image-box">
+                    <img src="images/master collection image.avif" alt="Master Collection" />
+                </div>
+                <figcaption>Master Collection</figcaption>
+            </a>
+        </figure>
+
+        <figure>
+            <a href="#">
+                <div class="image-box">
+                    <img src="images/Master Collection Chronograph image.avif" alt="Master Collection Chronograph" />
+                </div>
+                <figcaption>Master Collection Chronograph</figcaption>
+            </a>
+        </figure>
+
+        <figure>
+            <a href="#">
+                <div class="image-box">
+                    <img src="images/Master Collection Moonphase.avif" alt="Master Collection Moonphase" />
+                </div>
+                <figcaption>Master Collection Moonphase</figcaption>
+            </a>
+        </figure>
+
+        <figure>
+            <a href="#">
+                <div class="image-box">
+                    <img src="images/The Longines Master Collection GMT.avif"
+                        alt="The Longines Master Collection GMT" />
+                </div>
+                <figcaption>The Longines Master Collection GMT</figcaption>
+            </a>
+        </figure>
+    </div>
+</body>
+
+</html>
