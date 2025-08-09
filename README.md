@@ -5,4 +5,5 @@
 - Html5
 - Css3
 - Vanilla Js
-## Design cloned from Longines Landing page
+### Design cloned from Longines Landing page
+### Responsive design
