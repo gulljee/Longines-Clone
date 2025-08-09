@@ -1,0 +1,701 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+
+.first {
+    background: url(images/main-image-henry-cavill.avif) no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+
+    overflow: hidden;
+}
+
+.last-image img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-div {
+    display: flex;
+    gap: 15vw;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.header-div a {
+    color: white;
+
+}
+
+svg {
+    color: white;
+}
+
+.top-left-header nav a img {
+    height: 1.5vh;
+    position: relative;
+    top: 0.2vh;
+    left: 0.3vh;
+}
+
+.mega-menu-partial,
+.mega-menu-master,
+.search-menu {
+    display: none;
+}
+
+.top-left-header nav {
+    width: 30vw;
+    display: flex;
+    gap: 1vw;
+    position: relative;
+    top: 3vh;
+    left: 7vw;
+}
+
+.top-right-header nav {
+    display: flex;
+    gap: 2vw;
+    position: relative;
+    top: 3vh;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: center;
+    margin-top: -6vh;
+}
+
+.main-navbar a {
+    color: white;
+}
+
+.main-navbar nav {
+    margin-bottom: 2vh;
+    display: flex;
+    gap: 2vw;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.main-changing-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 5em;
+    position: relative;
+    top: 7vh;
+    left: 2vw;
+    color: white;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    margin-left: 5vw;
+    top: 2vh;
+}
+
+.international a,
+svg {
+    display: inline;
+    height: 2.5vh;
+    color: white;
+    vertical-align: top;
+}
+
+
+
+.header-parent {
+    background: linear-gradient(to bottom, #f0f0f0 0%, #f0f0f0 100%);
+    background-size: 100% 0%;
+    background-repeat: no-repeat;
+    background-position: top;
+    transition: background-size 0.2s ease;
+
+}
+
+
+.header-parent:hover {
+
+    background-size: 100% 100%;
+}
+
+
+
+.header-parent:hover a {
+    color: #003150;
+}
+
+.header-parent:hover svg {
+    color: #003150;
+}
+
+.header-parent:hover a:hover {
+    color: #009dff;
+    transition: color 0.3s ease;
+}
+
+.header-parent:hover a:hover svg {
+    color: #009dff;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.main-desc {
+    width: 65%;
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    word-spacing: 20%;
+    margin-top: 15vh;
+}
+
+.main-desc p {
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: bold;
+    line-height: 4vh;
+}
+
+.main-desc h2 {
+    font-family: Georgia, serif;
+}
+
+.main-desc span {
+    font-size: 0.9em;
+    color: #333;
+    font-weight: 900;
+    line-height: 5vh;
+}
+
+.videos video:nth-of-type(1) {
+    width: 50%;
+}
+
+.videos video:nth-of-type(2) {
+    width: 50%;
+}
+
+.videos {
+    margin-top: 10vh;
+    display: flex;
+}
+
+.slider {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 15vh;
+
+
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.slide {
+    min-width: 33%;
+    transition: transform 0.3s ease;
+
+
+}
+
+.slide:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.slide img {
+
+    width: 100%;
+    height: auto;
+}
+
+.slider-nav {
+    text-align: center;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.slider-nav svg {
+    height: 4vh;
+    cursor: pointer;
+}
+
+.slider h2 {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+.slider hr {
+    color: #ebe5e5
+}
+
+.last-image {
+    margin-top: 12vh;
+    background: url(images/last-image.avif) no-repeat;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.last-image-text {
+    color: white;
+    margin-bottom: 10vh;
+    margin-left: 6vw;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.last-image-text p {
+    font-size: 3em;
+}
+
+.last-image-text a {
+    margin-top: 1.5vh;
+    display: inline;
+    font-size: 1.5em;
+    color: white;
+}
+
+.last-image-text svg {
+    fill: white;
+    margin-top: 0.85vh;
+    height: 3vh;
+    transition: transform 0.5s ease;
+}
+
+.last-image-text a:hover svg {
+    transform: translateX(5px);
+}
+
+.footer {
+    display: flex;
+    gap: 20vw;
+    line-height: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+footer hr:nth-of-type(1) {
+    margin-top: 20vh;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.8em;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    transition: color 0.3s ease;
+    font-weight: bold;
+
+}
+
+.footer a:hover {
+    color: #009dff
+}
+
+
+
+.footer-list-1 a {
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    color: black;
+}
+
+
+.footer-list-1,
+.footer-list-2,
+.footer-list-3,
+.footer-list-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-list-1 {
+    margin-top: -2vh;
+    margin-left: 1vw;
+    line-height: 8vh;
+}
+
+label,
+input {
+    margin-left: 5vw;
+}
+
+label {
+    display: block;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+}
+
+input {
+    margin-bottom: 8vh;
+}
+
+.footer-last {
+    margin: auto;
+    color: grey;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    right: 8vw;
+    top: 16px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.hamburger svg {
+    width: 30px;
+    height: 30px;
+}
+
+.main-navbar {
+    position: absolute;
+    right: 50vw;
+    transform: translateX(57%);
+}
+
+
+
+@media (max-width:768px) {
+
+    * {
+        overflow-x: hidden;
+    }
+
+    .international,
+    .customer-service,
+    .our-universe,
+    .main-navbar,
+    .top-right-header nav a,
+    .cross-icon {
+        display: none;
+    }
+
+    .header-title {
+        width: 100%;
+        margin-left: 8vw;
+    }
+
+    .first {
+        background: url(images/main-image-henry-cavill.avif) no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .main-changing-text {
+        font-size: 3em;
+        margin-top: 15vh;
+    }
+
+    .hamburger {
+        display: inline;
+        margin-top: -1vh;
+
+    }
+
+    .hamburger-menu {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 15vw 3vw;
+        column-gap: 45vw;
+        row-gap: 10vh;
+        padding-bottom: 25vh;
+        width: 100%;
+        height: 100%;
+        background-color: #f5f5f5;
+        background-size: cover;
+        z-index: 1;
+        display: none;
+
+    }
+
+
+    .hamburger-menu a:nth-of-type(1),
+    .hamburger-menu svg:nth-of-type(1) {
+        margin-top: 20vh;
+    }
+
+
+    .hamburger-menu a,
+    .hamburger-menu svg {
+        margin-left: 20vw;
+        width: 100%;
+    }
+
+    .cross-icon {
+        display: none;
+        position: absolute;
+        right: 7vw;
+        top: 5vh;
+        z-index: 2000;
+    }
+
+    .hamburger-menu a,
+    svg {
+        color: #003150;
+    }
+
+
+    .videos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #video1,
+    #video2 {
+        height: 80vh;
+        width: 100vw;
+        object-fit: cover;
+    }
+
+    .last-image {
+        height: 40vh;
+    }
+
+    .last-image-text {
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+
+    .last-image-text p {
+        font-size: 1.2em;
+        margin-bottom: 2vh;
+    }
+
+    .last-image-text a {
+        font-size: 0.8em;
+    }
+
+    .last-image-text svg {
+        margin-top: 0.8vh;
+    }
+
+    .slider,
+    .slider-track,
+    .slider-nav {
+        overflow-x: auto;
+    }
+
+    .slide img {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .slider-nav {
+        display: none;
+    }
+
+    .footer {
+        gap: 16vw;
+    }
+
+    .footer a {
+        display: inline-block;
+        overflow-x: visible;
+    }
+
+    .footer-list-1,
+    .footer-list-2,
+    .footer-list-3,
+    .footer-list-4 {
+        font-size: 0.7em;
+
+    }
+
+    label {
+        min-width: 20vw;
+        font-size: 0.7em;
+    }
+
+    .header-parent:hover {
+        background-size: 0% 0%;
+    }
+
+    .wrapper {
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    .footer-subscribe input{
+        width: 60%;
+    }
+
+}
+
+@media (min-width:1025px) and (max-width:1440px) {
+
+    .header-title {
+        margin-left: 3vw;
+
+    }
+}
+
+@media (max-width:425px) {
+    input {
+        height: 4vh;
+        width: 50%;
+    }
+
+    .header-div a {
+        overflow-x: visible;
+    }
+}
+
+@media (min-width:320px) and (max-width:475px) {
+    .main-desc {
+        width: 85%;
+    }
+
+    .main-desc p {
+        line-height: 4vh;
+    }
+}
+
+@media (max-width:550px) {
+    .footer {
+        display: none;
+    }
+}
+
+.menu-container {
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    border-radius: 8px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    cursor: pointer;
+}
+
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.menu-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.dropdown-icon {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-item.expanded .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+
+
+.submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.submenu.expanded {
+    max-height: 200px;
+}
+
+.submenu-item {
+    padding: 12px 40px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.submenu-item:last-child {
+    border-bottom: none;
+}
+
+.submenu-item:hover {
+    background-color: #e8e8e8;
+}
+
+.footer-subscribe{
+    padding-right: 40px;
+}
+
+.footer-subscribe label{
+    font-size: small;
+}
+.footer-subscribe input{
+    width: 30%;
+    height: 5vh;
+    border: 1px solid gainsboro;
+    outline: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    padding-left: 25px;
+}
+
+.footer-last{
+    text-align: center;
+}
+
+@media(min-width:550px){
+    .footer-responsive{
+        display: none;
+    }
+}
+
+@media(max-width:768px){
+    .footer-subscribe input{
+        width: 70%;
+    }
+}
+
+@media(max-width:425px){
+    .footer-subscribe input{
+        width: 90%;
+    }
+
+    .footer-last p{
+        font-size: 0.7em;
+    }
+}
+
+@media(min-width:425px) and (max-width:768px){
+    .main-desc{
+        width:85%;
+    }
+}
+
